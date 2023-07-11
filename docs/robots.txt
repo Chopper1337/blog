@@ -1,0 +1,4 @@
+Sitemap: https://blog.chopperhook.xyz/sitemapindex.xml
+
+User-Agent: *
+Host: blog.chopperhook.xyz
