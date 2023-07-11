@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChopperHook Blog (Posts about Steam)</title><link>https://blog.chopperhook.xyz/</link><description></description><atom:link href="https://blog.chopperhook.xyz/categories/steam.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:chopper@oncrack.me"&gt;Chopper&lt;/a&gt; </copyright><lastBuildDate>Tue, 11 Jul 2023 18:56:22 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Modern Warfare 2 MP on Linux</title><link>https://blog.chopperhook.xyz/posts/modern-warfare-2-mp-on-linux/</link><dc:creator>Chopper</dc:creator><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;These are some notes about Modern Warfare 2 Multiplayer on Linux. I talk about the performance of the game, note about proton versions and explain how to unlock the FPS and FOV.&lt;/p&gt;
+&lt;h3&gt;Warning&lt;/h3&gt;
+&lt;p&gt;Later in this post I talk about using what is technically a cheat for MW2 MP. Please note that MW2 MP uses VAC and that I am not responsible in the case you get banned.&lt;/p&gt;
+&lt;h3&gt;Performance&lt;/h3&gt;
+&lt;p&gt;First thing I'd like to note is one of the nice things about gaming on Linux.&lt;/p&gt;
+&lt;p&gt;On Windows, MW2 SP runs great. To lock 333 FPS on it is nothing. MP however is a very different story. MP runs terribly.&lt;/p&gt;
+&lt;p&gt;The most obvious barrier is the 91 FPS cap on the game which, as far as I know, was put in place to prevent players exploiting the physics related silly-ness that comes with getting higher frame rates.&lt;/p&gt;
+&lt;p&gt;For those who don't know: As is popular in many games from the late 2000s and early 2010s, some physics in MW2 are tied to the frame rate. In the majority of older Call of Duty games this is the case. If you run the game at a frame rate over 125, you will start to notice some differences in gravity, it will be lower. The higher the frame rate, the lower it goes until it suddenly has the opposite affect when you exceed 333 FPS. I have no idea why it inverts like this.&lt;/p&gt;
+&lt;p&gt;So 91 FPS is the cap for MP for that reason. What if we removed that cap? (More detail on how later)&lt;/p&gt;
+&lt;p&gt;On Windows, removing the FPS cap is barely even worthwhile as the game will just about average 125 FPS on most systems.&lt;/p&gt;
+&lt;p&gt;On Linux however, we can easily lock 250 FPS or higher on the same hardware. I don't know the cause of this but it's always nice to see. So, speaking of playing on Linux, Proton time.&lt;/p&gt;
+&lt;h3&gt;Getting it running&lt;/h3&gt;
+&lt;p&gt;MW2 MP on Steam isn't as fussy as other COD games. Currently I play on Proton 8 but it should work on most versions.&lt;/p&gt;
+&lt;p&gt;In future I'll probably write a post about the weird behaviours of COD 4 and Black Ops on Steam.&lt;/p&gt;
+&lt;h3&gt;FPS Unlockers and FOV Changers&lt;/h3&gt;
+&lt;p&gt;To unlock the FPS and change FOV, we have to jump through some more hoops than the Windows user.&lt;/p&gt;
+&lt;h4&gt;ProtonHax installation&lt;/h4&gt;
+&lt;p&gt;The first of which is installing &lt;a href="https://github.com/jcnils/protonhax"&gt;ProtonHax&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Arch users can simple install &lt;code&gt;protonhax&lt;/code&gt; from the &lt;a href="https://aur.archlinux.org/packages/protonhax"&gt;AUR&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Personally I am on the &lt;code&gt;-git&lt;/code&gt; version. I guess try it if the regular one doesn't work for you.&lt;/p&gt;
+&lt;p&gt;Everyone else will be building it from source.&lt;/p&gt;
+&lt;h4&gt;ProtonHax setup&lt;/h4&gt;
+&lt;p&gt;Now that you have that installed, go to the launch options of MW2 MP on Steam and add the following:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;protonhax init %command%
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Now when the game is launched, we can use ProtonHax to run other applications along side the game.&lt;/p&gt;
+&lt;h4&gt;ProtonHax Usage&lt;/h4&gt;
+&lt;p&gt;First off, we need a tool to run along side the game. I will be using &lt;a href="https://github.com/andersblomqvist/mw2-fps-unlocker"&gt;mw2-fps-unlocker&lt;/a&gt; which allows you to change the FPS limit and your FOV.&lt;/p&gt;
+&lt;p&gt;Run MW2 at least once if you haven't already. This will create the "compatdata" folder we need to place the executable in.&lt;/p&gt;
+&lt;p&gt;Navigate to the install directory of the game, default should be &lt;code&gt;/home/$USER/.local/share/Steam/steamapps/common/Call of Duty Modern Warfare 2/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Then go up the directory tree til you're in the "steamapps" folder, from which you can navigate to the following directory: &lt;code&gt;steamapps/compatdata/10190/pfx/drive_c/&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;10190&lt;/code&gt; here is the APPID of the game on Steam. If you visit the store page for a game, you will see the APPID in the URL.&lt;/p&gt;
+&lt;p&gt;Place your trainer executable in this "drive_c" folder.&lt;/p&gt;
+&lt;p&gt;Now you can launch the game.&lt;/p&gt;
+&lt;p&gt;In a terminal, run &lt;code&gt;protonhax ls&lt;/code&gt; to verify the game is detected. You should see the APPID of the game in the output.&lt;/p&gt;
+&lt;p&gt;We can then run &lt;code&gt;protonhax run 10190 C:\YOUR-TRAINER-HERE.exe&lt;/code&gt; and it should launch the trainer along side the game.&lt;/p&gt;</description><category>COD</category><category>gaming</category><category>linux</category><category>MW2</category><category>Steam</category><guid>https://blog.chopperhook.xyz/posts/modern-warfare-2-mp-on-linux/</guid><pubDate>Tue, 11 Jul 2023 18:18:53 GMT</pubDate></item></channel></rss>
