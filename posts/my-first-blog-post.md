@@ -15,7 +15,11 @@ This is my first blog post. It has been written in markdown in DOOM Emacs and th
 
 ## Current workflow
 
+### Local development
+
 I am using `nikola build && nikola serve` to easily rebuild the site when I'd like to preview changes.
+
+### Creating new posts
 
 I have also created the following script, called "newpost.sh" in the working directory to quickly add a new post:
 
@@ -24,6 +28,16 @@ nikola new_post -e -f markdown
 ```
 
 This then drops me into NeoVim where I can write the initial contents of the blog post.
+
+### Publishing 
+
+Since this blog is stored on [GitHub](https://github.com/Chopper1337/blog), I can add Git hooks to my local copy of the repository.
+
+This allows me to run scripts on certain actions such as when committing to the repo, pushing to the remote etc.
+
+I have added `.git/hooks/pre-commit` to my local repository such that when I make a commit, the site is regenerated.
+
+I would do this before pushing but in the case that I manage to break something, I'd prefer it be spotted sooner rather than later.
 
 ## Changes
 
@@ -51,3 +65,7 @@ a:link, a:visited, a.email span.name {
     color: #00ff00;
 }
 ```
+
+## Conclusion 
+
+Overall I am happy with this setup. This didn't take long to set up and it seems easy to work with and customise. Hopefully it doesn't get abandoned like most blogs :)
