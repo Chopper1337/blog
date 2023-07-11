@@ -15,11 +15,23 @@
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/archive.html</loc>
-  <lastmod>2023-07-11T18:01:00Z</lastmod>
+  <lastmod>2023-07-11T18:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/categories/</loc>
-  <lastmod>2023-07-11T18:01:00Z</lastmod>
+  <lastmod>2023-07-11T18:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://blog.chopperhook.xyz/categories/css/</loc>
+  <lastmod>2023-07-11T18:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://blog.chopperhook.xyz/categories/git-hooks/</loc>
+  <lastmod>2023-07-11T18:14:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://blog.chopperhook.xyz/categories/markdown/</loc>
+  <lastmod>2023-07-11T18:14:00Z</lastmod>
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/galleries/</loc>
@@ -28,6 +40,10 @@
  <url>
   <loc>https://blog.chopperhook.xyz/listings/</loc>
   <lastmod>2023-07-11T18:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://blog.chopperhook.xyz/posts/modern-warfare-2-mp-on-linux/</loc>
+  <lastmod>2023-07-11T18:55:00Z</lastmod>
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/posts/my-first-blog-post/</loc>

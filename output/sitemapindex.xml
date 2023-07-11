@@ -6,15 +6,27 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://blog.chopperhook.xyz/categories/css.xml</loc>
+  <lastmod>2023-07-11T18:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://blog.chopperhook.xyz/categories/git-hooks.xml</loc>
+  <lastmod>2023-07-11T18:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://blog.chopperhook.xyz/categories/markdown.xml</loc>
+  <lastmod>2023-07-11T18:14:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://blog.chopperhook.xyz/galleries/rss.xml</loc>
   <lastmod>2023-07-11T18:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/rss.xml</loc>
-  <lastmod>2023-07-11T18:01:00Z</lastmod>
+  <lastmod>2023-07-11T18:55:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/sitemap.xml</loc>
-  <lastmod>2023-07-11T18:01:00Z</lastmod>
+  <lastmod>2023-07-11T18:55:00Z</lastmod>
  </sitemap>
 </sitemapindex>

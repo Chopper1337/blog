@@ -14,7 +14,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://blog.chopperhook.xyz/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/my-first-blog-post/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/modern-warfare-2-mp-on-linux/" type="text/html">
 </head>
 <body class="hack dark">
 
@@ -39,7 +39,57 @@
     
     
     </ul></nav></header><main id="content"><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/my-first-blog-post/" class="u-url">My First Blog Post</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/modern-warfare-2-mp-on-linux/" class="u-url">Modern Warfare 2 MP on Linux</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Chopper
+            </span></p>
+            <p class="dateline">
+            <a href="posts/modern-warfare-2-mp-on-linux/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-07-11T19:18:53+01:00" itemprop="datePublished" title="2023-07-11 19:18">2023-07-11 19:18</time></a>
+            </p>
+        </div>
+    </header><div class="e-content entry-content">
+    <h2></h2>
+<p>These are some notes about Modern Warfare 2 Multiplayer on Linux. I talk about the performance of the game, note about proton versions and explain how to unlock the FPS and FOV.</p>
+<h3>Warning</h3>
+<p>Later in this post I talk about using what is technically a cheat for MW2 MP. Please note that MW2 MP uses VAC and that I am not responsible in the case you get banned.</p>
+<h3>Performance</h3>
+<p>First thing I'd like to note is one of the nice things about gaming on Linux.</p>
+<p>On Windows, MW2 SP runs great. To lock 333 FPS on it is nothing. MP however is a very different story. MP runs terribly.</p>
+<p>The most obvious barrier is the 91 FPS cap on the game which, as far as I know, was put in place to prevent players exploiting the physics related silly-ness that comes with getting higher framerates.</p>
+<p>For those who don't know: As is popular in many games from the late 2000s and early 2010s, some physics in MW2 are tied to the frame rate. In the majority of older Call of Duty games this is the case. If you run the game at a frame rate over 125, you will start to notice some differences in gravity, it will be lower. The higher the frame rate, the lower it goes until it suddenly has the opposite affect when you exceed 333 FPS. I have no idea why it inverts like this.</p>
+<p>So 91 FPS is the cap for MP for that reason. What if we removed that cap? (More detail on how later)</p>
+<p>On Windows, removing the FPS cap is barely even worthwhile as the game will just about average 125 FPS on most systems.</p>
+<p>On Linux however, we can easily lock 250 FPS or higher on the same hardware. I don't know the cause of this but it's always nice to see. So, speaking of playing on Linux, Proton time.</p>
+<h3>Getting it running</h3>
+<p>MW2 MP on Steam isn't as fussy as other COD games. Currently I play on Proton 8 but it should work on most versions.</p>
+<p>In future I'll probably write a post about the weird behaviours of COD 4 and Black Ops on Steam.</p>
+<h3>FPS Unlockers and FOV Changers</h3>
+<p>To unlock the FPS and change FOV, we have to jump through some more hoops than the Windows user.</p>
+<h4>ProtonHax installation</h4>
+<p>The first of which is installing <a href="https://github.com/jcnils/protonhax">ProtonHax</a>.</p>
+<p>Arch users can simple install <code>protonhax</code> from the <a href="https://aur.archlinux.org/packages/protonhax">AUR</a></p>
+<p>Personally I am on the <code>-git</code> version. I guess try it if the regular one doesn't work for you.</p>
+<p>Everyone else will be building it from source.</p>
+<h4>ProtonHax setup</h4>
+<p>Now that you have that installed, go to the launch options of MW2 MP on Steam and add the following:</p>
+<div class="code"><pre class="code literal-block">protonhax init %command%
+</pre></div>
+
+<p>Now when the game is launched, we can use ProtonHax to run other applications along side the game.</p>
+<h4>ProtonHax Usage</h4>
+<p>First off, we need a tool to run along side the game. I will be using <a href="https://github.com/andersblomqvist/mw2-fps-unlocker">mw2-fps-unlocker</a> which allows you to change the FPS limit and your FOV.</p>
+<p>Run MW2 at least once if you haven't already. This will create the "compatdata" folder we need to place the executable in.</p>
+<p>Navigate to the install directory of the game, default should be <code>/home/$USER/.local/share/Steam/steamapps/common/Call of Duty Modern Warfare 2/</code></p>
+<p>Then go up the directory tree til you're in the "steamapps" folder, from which you can navigate to the following directory: <code>steamapps/compatdata/10190/pfx/drive_c/</code></p>
+<p><code>10190</code> here is the APPID of the game on Steam. If you visit the store page for a game, you will see the APPID in the URL.</p>
+<p>Place your trainer executable in this "drive_c" folder.</p>
+<p>Now you can launch the game.</p>
+<p>In a terminal, run <code>protonhax ls</code> to verify the game is detected. You should see the APPID of the game in the output.</p>
+<p>We can then run <code>protonhax run 10190 C:\YOUR-TRAINER-HERE.exe</code> and it should launch the trainer along side the game.</p>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/my-first-blog-post/" class="u-url">My First Blog Post</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Chopper
