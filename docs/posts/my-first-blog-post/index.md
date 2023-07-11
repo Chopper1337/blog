@@ -9,24 +9,45 @@
 .. type: text
 -->
 
-This is my first blog post using Nikola.
+# 
 
-This was written in markdown
+This is my first blog post. It has been written in markdown in DOOM Emacs and the static site is generated using [Nikola](https://getnikola.com/).
 
-Here are a few tests of some markdown things:
+## Current workflow
 
-# Heading 1
+I am using `nikola build && nikola serve` to easily rebuild the site when I'd like to preview changes.
 
-## Heading 2
-
-### Heading 3
-
-*Italic text*
-
-**Bold text**
-
-`sudo rm -rf ~`
+I have also created the following script, called "newpost.sh" in the working directory to quickly add a new post:
 
 ```
-echo "Hello $1"
+nikola new_post -e -f markdown
+```
+
+This then drops me into NeoVim where I can write the initial contents of the blog post.
+
+## Changes
+
+Writing this inital post, I have noticed there would usually be a very small gap between the post title and the content. Adding a single `#` heading 1 tag adds some space there.
+
+I have already added some theme changes to this [Hack](https://github.com/getnikola/nikola-themes/tree/master/v8/hack) theme.
+
+* Added grey background to code blocks so they stand out more with the dark theme
+
+* Added border radius to large code blocks to make them look nicer
+
+* Changed links to hacker green to match the rest of [ChopperHook](https://chopperhook.xyz)
+
+```
+.code, code, .hack code, .hack pre, .hack pre code {
+    background-color: #111111;
+    padding: 0.08em;
+}
+
+div .code {
+    border-radius: 0.5em;
+}
+
+a:link, a:visited, a.email span.name {
+    color: #00ff00;
+}
 ```

@@ -1,12 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChopperHook Blog</title><link>https://blog.chopperhook.xyz/</link><description>Blog for ChopperHook.XYZ</description><atom:link href="https://blog.chopperhook.xyz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:-"&gt;Chopper&lt;/a&gt; </copyright><lastBuildDate>Tue, 11 Jul 2023 14:07:25 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My First Blog Post</title><link>https://blog.chopperhook.xyz/posts/my-first-blog-post/</link><dc:creator>Chopper</dc:creator><description>&lt;p&gt;This is my first blog post using Nikola.&lt;/p&gt;
-&lt;p&gt;This was written in markdown&lt;/p&gt;
-&lt;p&gt;Here are a few tests of some markdown things:&lt;/p&gt;
-&lt;h2&gt;Heading 1&lt;/h2&gt;
-&lt;h3&gt;Heading 2&lt;/h3&gt;
-&lt;h4&gt;Heading 3&lt;/h4&gt;
-&lt;p&gt;&lt;em&gt;Italic text&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Bold text&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;sudo rm -rf ~&lt;/code&gt;&lt;/p&gt;
-&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;echo "Hello $1"
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChopperHook Blog</title><link>https://blog.chopperhook.xyz/</link><description>Blog for ChopperHook.XYZ</description><atom:link href="https://blog.chopperhook.xyz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:chopper@oncrack.me"&gt;Chopper&lt;/a&gt; </copyright><lastBuildDate>Tue, 11 Jul 2023 17:56:14 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My First Blog Post</title><link>https://blog.chopperhook.xyz/posts/my-first-blog-post/</link><dc:creator>Chopper</dc:creator><description>&lt;h2&gt;&lt;/h2&gt;
+&lt;p&gt;This is my first blog post. It has been written in markdown in DOOM Emacs and the static site is generated using &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt;.&lt;/p&gt;
+&lt;h3&gt;Current workflow&lt;/h3&gt;
+&lt;p&gt;I am using &lt;code&gt;nikola build &amp;amp;&amp;amp; nikola serve&lt;/code&gt; to easily rebuild the site when I'd like to preview changes.&lt;/p&gt;
+&lt;p&gt;I have also created the following script, called "newpost.sh" in the working directory to quickly add a new post:&lt;/p&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;nikola new_post -e -f markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;This then drops me into NeoVim where I can write the initial contents of the blog post.&lt;/p&gt;
+&lt;h3&gt;Changes&lt;/h3&gt;
+&lt;p&gt;Writing this inital post, I have noticed there would usually be a very small gap between the post title and the content. Adding a single &lt;code&gt;#&lt;/code&gt; heading 1 tag adds some space there.&lt;/p&gt;
+&lt;p&gt;I have already added some theme changes to this &lt;a href="https://github.com/getnikola/nikola-themes/tree/master/v8/hack"&gt;Hack&lt;/a&gt; theme.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Added grey background to code blocks so they stand out more with the dark theme&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Added border radius to large code blocks to make them look nicer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Changed links to hacker green to match the rest of &lt;a href="https://chopperhook.xyz"&gt;ChopperHook&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;code&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;code&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;hack&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;code&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;hack&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;pre&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;hack&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;pre&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;background-color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#111111&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;padding&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.08&lt;/span&gt;&lt;span class="kt"&gt;em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;div&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;code&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;border-radius&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mf"&gt;0.5&lt;/span&gt;&lt;span class="kt"&gt;em&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;link&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;email&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;span&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;name&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
+&lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#00ff00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+&lt;span class="p"&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;</description><guid>https://blog.chopperhook.xyz/posts/my-first-blog-post/</guid><pubDate>Tue, 11 Jul 2023 14:02:53 GMT</pubDate></item></channel></rss>
