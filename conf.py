@@ -24,7 +24,7 @@ SITE_URL = "https://blog.chopperhook.xyz/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://blog.chopperhook.xyz/"
-BLOG_EMAIL = "-"
+BLOG_EMAIL = "chopper@oncrack.me"
 BLOG_DESCRIPTION = "Blog for ChopperHook.XYZ"  # (translatable)
 
 # Nikola is multilingual!
@@ -156,7 +156,7 @@ NAVIGATION_ALT_LINKS = {
 }
 
 # Name of the theme to use.
-THEME = "bootblog4"
+THEME = "hack"
 
 # A theme color. In default themes, it might be displayed by some browsers as
 # the browser UI color (eg. Chrome on Android). Other themes might also use it
@@ -1412,3 +1412,4 @@ GLOBAL_CONTEXT = {}
 # GLOBAL_CONTEXT as parameter when the template is about to be
 # rendered
 GLOBAL_CONTEXT_FILLER = []
+GLOBAL_CONTEXT['HACK_VARIANT'] = 'dark'
