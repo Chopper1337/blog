@@ -2,7 +2,7 @@
 .. title: My First Blog Post
 .. slug: my-first-blog-post
 .. date: 2023-07-11 15:02:53 UTC+01:00
-.. tags: 
+.. tags: markdown,css,git hooks
 .. category: 
 .. link: 
 .. description: 

@@ -53,12 +53,19 @@
     <h2></h2>
 <p>This is my first blog post. It has been written in markdown in DOOM Emacs and the static site is generated using <a href="https://getnikola.com/">Nikola</a>.</p>
 <h3>Current workflow</h3>
+<h4>Local development</h4>
 <p>I am using <code>nikola build &amp;&amp; nikola serve</code> to easily rebuild the site when I'd like to preview changes.</p>
+<h4>Creating new posts</h4>
 <p>I have also created the following script, called "newpost.sh" in the working directory to quickly add a new post:</p>
 <div class="code"><pre class="code literal-block">nikola new_post -e -f markdown
 </pre></div>
 
 <p>This then drops me into NeoVim where I can write the initial contents of the blog post.</p>
+<h4>Publishing</h4>
+<p>Since this blog is stored on <a href="https://github.com/Chopper1337/blog">GitHub</a>, I can add Git hooks to my local copy of the repository.</p>
+<p>This allows me to run scripts on certain actions such as when committing to the repo, pushing to the remote etc.</p>
+<p>I have added <code>.git/hooks/pre-commit</code> to my local repository such that when I make a commit, the site is regenerated.</p>
+<p>I would do this before pushing but in the case that I manage to break something, I'd prefer it be spotted sooner rather than later.</p>
 <h3>Changes</h3>
 <p>Writing this inital post, I have noticed there would usually be a very small gap between the post title and the content. Adding a single <code>#</code> heading 1 tag adds some space there.</p>
 <p>I have already added some theme changes to this <a href="https://github.com/getnikola/nikola-themes/tree/master/v8/hack">Hack</a> theme.</p>
@@ -86,6 +93,9 @@
 <span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#00ff00</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
+
+<h3>Conclusion</h3>
+<p>Overall I am happy with this setup. This didn't take long to set up and it seems easy to work with and customise. Hopefully it doesn't get abandoned like most blogs :)</p>
     </div>
     </article>
 </div>

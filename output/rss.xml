@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChopperHook Blog</title><link>https://blog.chopperhook.xyz/</link><description>Blog for ChopperHook.XYZ</description><atom:link href="https://blog.chopperhook.xyz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:chopper@oncrack.me"&gt;Chopper&lt;/a&gt; </copyright><lastBuildDate>Tue, 11 Jul 2023 18:01:09 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My First Blog Post</title><link>https://blog.chopperhook.xyz/posts/my-first-blog-post/</link><dc:creator>Chopper</dc:creator><description>&lt;h2&gt;&lt;/h2&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ChopperHook Blog</title><link>https://blog.chopperhook.xyz/</link><description>Blog for ChopperHook.XYZ</description><atom:link href="https://blog.chopperhook.xyz/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2023 &lt;a href="mailto:chopper@oncrack.me"&gt;Chopper&lt;/a&gt; </copyright><lastBuildDate>Tue, 11 Jul 2023 18:12:13 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>My First Blog Post</title><link>https://blog.chopperhook.xyz/posts/my-first-blog-post/</link><dc:creator>Chopper</dc:creator><description>&lt;h2&gt;&lt;/h2&gt;
 &lt;p&gt;This is my first blog post. It has been written in markdown in DOOM Emacs and the static site is generated using &lt;a href="https://getnikola.com/"&gt;Nikola&lt;/a&gt;.&lt;/p&gt;
 &lt;h3&gt;Current workflow&lt;/h3&gt;
+&lt;h4&gt;Local development&lt;/h4&gt;
 &lt;p&gt;I am using &lt;code&gt;nikola build &amp;amp;&amp;amp; nikola serve&lt;/code&gt; to easily rebuild the site when I'd like to preview changes.&lt;/p&gt;
+&lt;h4&gt;Creating new posts&lt;/h4&gt;
 &lt;p&gt;I have also created the following script, called "newpost.sh" in the working directory to quickly add a new post:&lt;/p&gt;
 &lt;div class="code"&gt;&lt;pre class="code literal-block"&gt;nikola new_post -e -f markdown
 &lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;This then drops me into NeoVim where I can write the initial contents of the blog post.&lt;/p&gt;
+&lt;h4&gt;Publishing&lt;/h4&gt;
+&lt;p&gt;Since this blog is stored on &lt;a href="https://github.com/Chopper1337/blog"&gt;GitHub&lt;/a&gt;, I can add Git hooks to my local copy of the repository.&lt;/p&gt;
+&lt;p&gt;This allows me to run scripts on certain actions such as when committing to the repo, pushing to the remote etc.&lt;/p&gt;
+&lt;p&gt;I have added &lt;code&gt;.git/hooks/pre-commit&lt;/code&gt; to my local repository such that when I make a commit, the site is regenerated.&lt;/p&gt;
+&lt;p&gt;I would do this before pushing but in the case that I manage to break something, I'd prefer it be spotted sooner rather than later.&lt;/p&gt;
 &lt;h3&gt;Changes&lt;/h3&gt;
 &lt;p&gt;Writing this inital post, I have noticed there would usually be a very small gap between the post title and the content. Adding a single &lt;code&gt;#&lt;/code&gt; heading 1 tag adds some space there.&lt;/p&gt;
 &lt;p&gt;I have already added some theme changes to this &lt;a href="https://github.com/getnikola/nikola-themes/tree/master/v8/hack"&gt;Hack&lt;/a&gt; theme.&lt;/p&gt;
@@ -34,4 +41,7 @@
 &lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;link&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="nd"&gt;visited&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;a&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;email&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="nt"&gt;span&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="nc"&gt;name&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;
 &lt;span class="w"&gt;    &lt;/span&gt;&lt;span class="k"&gt;color&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="w"&gt; &lt;/span&gt;&lt;span class="mh"&gt;#00ff00&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</description><guid>https://blog.chopperhook.xyz/posts/my-first-blog-post/</guid><pubDate>Tue, 11 Jul 2023 14:02:53 GMT</pubDate></item></channel></rss>
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;Overall I am happy with this setup. This didn't take long to set up and it seems easy to work with and customise. Hopefully it doesn't get abandoned like most blogs :)&lt;/p&gt;</description><guid>https://blog.chopperhook.xyz/posts/my-first-blog-post/</guid><pubDate>Tue, 11 Jul 2023 14:02:53 GMT</pubDate></item></channel></rss>
