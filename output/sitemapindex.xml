@@ -6,28 +6,36 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://blog.chopperhook.xyz/categories/cheating.xml</loc>
+  <lastmod>2023-07-13T10:06:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/cod.xml</loc>
   <lastmod>2023-07-11T18:56:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://blog.chopperhook.xyz/categories/cs.xml</loc>
+  <lastmod>2023-07-13T10:06:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/css.xml</loc>
-  <lastmod>2023-07-11T18:14:00Z</lastmod>
+  <lastmod>2023-07-11T22:22:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/gaming.xml</loc>
-  <lastmod>2023-07-11T18:56:00Z</lastmod>
+  <lastmod>2023-07-13T10:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/git-hooks.xml</loc>
-  <lastmod>2023-07-11T18:14:00Z</lastmod>
+  <lastmod>2023-07-11T22:22:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/linux.xml</loc>
-  <lastmod>2023-07-11T18:56:00Z</lastmod>
+  <lastmod>2023-07-13T10:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/markdown.xml</loc>
-  <lastmod>2023-07-11T18:14:00Z</lastmod>
+  <lastmod>2023-07-11T22:22:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/mw2.xml</loc>
@@ -35,7 +43,7 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/steam.xml</loc>
-  <lastmod>2023-07-11T18:56:00Z</lastmod>
+  <lastmod>2023-07-13T10:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/galleries/rss.xml</loc>
@@ -43,10 +51,10 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/rss.xml</loc>
-  <lastmod>2023-07-11T18:56:00Z</lastmod>
+  <lastmod>2023-07-13T10:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/sitemap.xml</loc>
-  <lastmod>2023-07-11T18:56:00Z</lastmod>
+  <lastmod>2023-07-13T10:06:00Z</lastmod>
  </sitemap>
 </sitemapindex>
