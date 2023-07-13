@@ -35,11 +35,11 @@ Personally, I like VAC as it isn't terribly invasive and can't crash my entire P
 
 VAC could do a better job with some effort: Despite the source code for many cheats being publicly available, such as [Osiris](https://github.com/danielkrupinski/Osiris), they still don't detect them. On Linux, any user can download, compile and inject Osiris will zero consequences. Unless they use detected features such as "No duck cooldown".
 
-What they've tried so far isn't much: Here's a [post](https://lwss.github.io/State-Of-Vac-linux-2020/) by [LWSS](https://github.com/LWSS/) about VAC on Linux as of 2020, it has gone essentially unchanged.
+What they've tried so far isn't much: Here's a [post](https://lwss.github.io/State-Of-Vac-linux-2020/) by [LWSS](https://github.com/LWSS/) about VAC on Linux as of 2020, it has gone essentially unchanged since.
 
 Some interesting methods they've tried:
 
-In attempt to detect modified view angles, they added backup variants of the associated variables. The idea here was to store the original view angles in the backup and compare them to the current ones. In the case that a cheat has modified the original view angles, the values will no longer match and the player should be banned. The main issue with this attempt is that in a cheat, you can also update the backup view angles associated variables, meaning this has been entirely circumvented. 
+In an attempt to detect modified view angles, they added backup variants of the associated variables. The idea here was to store the original view angles in the backup and compare them to the current ones. In the case that a cheat has modified the original view angles, the values will no longer match and the player should be banned. The main issue with this attempt is that in a cheat, you can also update the backup view angle's associated variables, meaning this has been entirely circumvented. 
 
 On Linux, a VAC module exists which runs `cat /proc/$(pidof csgo_linux64)/maps | grep AimTux` in order to "detect" [AimTux](https://github.com/AimTuxOfficial/AimTux). Note that to bypass this, you simply just rename the library before injection. It's like "detecting" if a file is malware by using the file name.
 
@@ -58,10 +58,14 @@ What makes people think this will be any different for CS2?
 
 "VAC Live" is supposedly a more active system utilising the trained "VAC Net" AI to detect cheaters. See [this video](https://www.youtube.com/watch?v=BfCSOjfPQWc).
 
-In the video, a player reports another and they target is instantly banned. Some important things to note about this are that the cheater was barely getting kills and also that during the report, the final checkbox was highlighted in red.
+In the video, a player reports another and the target is instantly banned. Some important things to note about this are that the cheater was barely getting kills and also that during the report, the final checkbox was highlighted in red.
 
-The cheater having low kills is something of note because they may not have even been cheating in that match. The ban *could* have been a pending one from CSGO as Valve almost always delay bans to slow down the rate at which people can find out if a feature, cheat or loader is detected. In this case, "VAC Live" is nothing more than giving the ban a push to make it happen sooner.
+The cheater having low kills is something of note because they may not have even been cheating in that match. The ban *could* have been a pending one from CSGO as Valve almost always delay bans to slow down the rate at which people can find out if a feature, cheat or loader is detected. In this case, "VAC Live" is nothing more than allowing players to give the ban a push to make it happen sooner.
 
 The final checkbox being red is of note as it may indicate that it does more than just report. What first comes to mind is that it could run VAC modules on the target and ban accordingly. For the regular player, this would be about the most to expect from this new feature.
 
 The expectation that "VAC Live" may be better at detecting cheats is not a good one to have. As explained earlier, Valve don't bet on detecting cheats.
+
+## Conclusion
+
+Cheating in CS2 will probably be the same as in CSGO. I don't see Valve dumping their work on non-invasive anti-cheat any time soon. "VAC Live" is not likely to change much for legitimate players or cheaters.
