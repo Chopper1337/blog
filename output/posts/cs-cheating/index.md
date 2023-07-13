@@ -56,7 +56,7 @@ Of course this system isn't perfect either. At the time of writing, when using [
 
 What makes people think this will be any different for CS2?
 
-"VAC Live" is supposedly a more active system utilising they trained "VAC Net" AI to detect cheaters. See [this video](https://www.youtube.com/watch?v=BfCSOjfPQWc).
+"VAC Live" is supposedly a more active system utilising the trained "VAC Net" AI to detect cheaters. See [this video](https://www.youtube.com/watch?v=BfCSOjfPQWc).
 
 In the video, a player reports another and they target is instantly banned. Some important things to note about this are that the cheater was barely getting kills and also that during the report, the final checkbox was highlighted in red.
 
