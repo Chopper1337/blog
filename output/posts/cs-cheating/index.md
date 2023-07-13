@@ -13,7 +13,7 @@
 
 # "*The purpose of a system is what it does*".
 
-With the release upcoming release of CS2, there is plenty of conversation around "VAC Live". Many people seem to think it'll be an improvement for CS2 over CSGO. Today I'll talk about why this probably is not the case.
+With the upcoming release of CS2, there is plenty of conversation around "VAC Live". Many people seem to think it'll be an improvement for CS2 over CSGO. Today I'll talk about why this probably is not the case.
 
 Currently, in CSGO, there are only three requirements to cheat in a safe manner:
 
