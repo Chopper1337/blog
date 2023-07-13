@@ -19,7 +19,7 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/css.xml</loc>
-  <lastmod>2023-07-11T22:22:00Z</lastmod>
+  <lastmod>2023-07-13T10:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/gaming.xml</loc>
@@ -30,12 +30,16 @@
   <lastmod>2023-07-11T22:22:00Z</lastmod>
  </sitemap>
  <sitemap>
+  <loc>https://blog.chopperhook.xyz/categories/git.xml</loc>
+  <lastmod>2023-07-13T10:34:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/linux.xml</loc>
   <lastmod>2023-07-13T10:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/markdown.xml</loc>
-  <lastmod>2023-07-11T22:22:00Z</lastmod>
+  <lastmod>2023-07-13T10:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/mw2.xml</loc>
@@ -51,10 +55,10 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/rss.xml</loc>
-  <lastmod>2023-07-13T10:30:00Z</lastmod>
+  <lastmod>2023-07-13T10:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/sitemap.xml</loc>
-  <lastmod>2023-07-13T10:30:00Z</lastmod>
+  <lastmod>2023-07-13T10:34:00Z</lastmod>
  </sitemap>
 </sitemapindex>
