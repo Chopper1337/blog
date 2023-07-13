@@ -33,7 +33,7 @@ VAC, compared to any other AC, is a minimal attempt at detecting cheats in the "
 
 Personally, I like VAC as it isn't terribly invasive and can't crash my entire PC like Vanguard does.
 
-VAC could do a better job with some effort: Despite the source code for many cheats being publicly available, such as [Osiris](https://github.com/danielkrupinski/Osiris), they still don't detect it. On Linux, any user can download, compile and inject Osiris will zero consequences. Unless they use detected features such as "No duck cooldown".
+VAC could do a better job with some effort: Despite the source code for many cheats being publicly available, such as [Osiris](https://github.com/danielkrupinski/Osiris), they still don't detect them. On Linux, any user can download, compile and inject Osiris will zero consequences. Unless they use detected features such as "No duck cooldown".
 
 What they've tried so far isn't much: Here's a [post](https://lwss.github.io/State-Of-Vac-linux-2020/) by [LWSS](https://github.com/LWSS/) about VAC on Linux as of 2020, it has gone essentially unchanged.
 
