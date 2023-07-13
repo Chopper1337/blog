@@ -14,7 +14,7 @@
 <meta name="generator" content="Nikola (getnikola.com)">
 <link rel="alternate" type="application/rss+xml" title="RSS" href="rss.xml">
 <link rel="canonical" href="https://blog.chopperhook.xyz/">
-<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/csgo-cheating/" type="text/html">
+<!--[if lt IE 9]><script src="assets/js/html5.js"></script><![endif]--><link rel="prefetch" href="posts/cs-cheating/" type="text/html">
 </head>
 <body class="hack dark">
 
@@ -39,20 +39,19 @@
     
     
     </ul></nav></header><main id="content"><div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/csgo-cheating/" class="u-url">CSGO Cheating</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="posts/cs-cheating/" class="u-url">CS Cheating</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Chopper
             </span></p>
             <p class="dateline">
-            <a href="posts/csgo-cheating/" rel="bookmark">
-            <time class="published dt-published" datetime="2023-07-11T22:41:52+01:00" itemprop="datePublished" title="2023-07-11 22:41">2023-07-11 22:41</time></a>
+            <a href="posts/cs-cheating/" rel="bookmark">
+            <time class="published dt-published" datetime="2023-07-13T10:41:52+01:00" itemprop="datePublished" title="2023-07-13 10:41">2023-07-13 10:41</time></a>
             </p>
         </div>
     </header><div class="e-content entry-content">
     <h2></h2>
-<p>This post is WIP.</p>
-<h3>"<em>The purpose of a system is what it does</em>".</h3>
+<h2>"<em>The purpose of a system is what it does</em>".</h2>
 <p>With the release upcoming release of CS2, there is plenty of conversation around "VAC Live". Many people seem to think it'll be an improvement for CS2 over CSGO. Today I'll talk about why this probably is not the case.</p>
 <p>Currently, in CSGO, there are only three requirements to cheat in a safe manner:</p>
 <ul>
@@ -68,15 +67,19 @@
 </ul>
 <p>These aren't difficult steps to follow, and this is intentional.</p>
 <p>Valve essentially allow cheating in CSGO. Their entire system is designed in this way. </p>
-<h4>VAC</h4>
-<p>VAC, compared to any other AC, is a minimal attempt at detecting cheats in the "traditional" manner. It's very passive compared to other AC solutions and it's also safer to run.</p>
+<h3>VAC</h3>
+<p>VAC, compared to any other AC, is a minimal attempt at detecting cheats in the "traditional" manner. It's very passive compared to other AC solutions and it's also safer to run due to it being user-mode and not kernel-mode. </p>
+<p>Personally, I like VAC as it isn't terribly invasive and can't crash my entire PC like Vanguard does.</p>
 <p>VAC could do a better job with some effort: Despite the source code for many cheats being publicly available, such as <a href="https://github.com/danielkrupinski/Osiris">Osiris</a>, they still don't detect it. On Linux, any user can download, compile and inject Osiris will zero consequences. Unless they use detected features such as "No duck cooldown".</p>
 <p>What they've tried so far isn't much: Here's a <a href="https://lwss.github.io/State-Of-Vac-linux-2020/">post</a> by <a href="https://github.com/LWSS/">LWSS</a> about VAC on Linux as of 2020, it has gone essentially unchanged.</p>
-<h4>Trust</h4>
-<p>For the "<a href="https://help.steampowered.com/en/faqs/view/00EF-D679-C76A-C185">Trust</a>" system: This system isn't intended to ban players. This system exists to keep cheaters separate from legitimate players.</p>
+<p>Some interesting methods they've tried:</p>
+<p>In attempt to detect modified view angles, they added backup variants of the associated variables. The idea here was to store the original view angles in the backup and compare them to the current ones. In the case that a cheat has modified the original view angles, the values will no longer match and the player should be banned. The main issue with this attempt is that in a cheat, you can also update the backup view angles associated variables, meaning this has been entirely circumvented. </p>
+<p>On Linux, a VAC module exists which runs <code>cat /proc/$(pidof csgo_linux64)/maps | grep AimTux</code> in order to "detect" <a href="https://github.com/AimTuxOfficial/AimTux">AimTux</a>. Note that to bypass this, you simply just rename the library before injection. It's like "detecting" if a file is malware by using the file name.</p>
+<h3>Trust</h3>
+<p>The "<a href="https://help.steampowered.com/en/faqs/view/00EF-D679-C76A-C185">Trust</a>" system isn't intended to ban players. This system exists to keep cheaters separate from legitimate players.</p>
 <p>This implies that they would prefer let cheaters play with/against other cheaters.</p>
 <p>Of course this system isn't perfect either. At the time of writing, when using <a href="https://gamesense.pub/">gamesense</a> (among other cheats), you can rage and still have high trust.</p>
-<h4>CS2</h4>
+<h3>CS2</h3>
 <p>What makes people think this will be any different for CS2?</p>
 <p>"VAC Live" is supposedly a more active system utilising they trained "VAC Net" AI to detect cheaters. See <a href="https://www.youtube.com/watch?v=BfCSOjfPQWc">this video</a>.</p>
 <p>In the video, a player reports another and they target is instantly banned. Some important things to note about this are that the cheater was barely getting kills and also that during the report, the final checkbox was highlighted in red.</p>

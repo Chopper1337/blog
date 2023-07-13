@@ -1,7 +1,7 @@
 <!--
-.. title: CSGO Cheating
+.. title: CS Cheating
 .. slug: csgo-cheating
-.. date: 2023-07-11 22:41:52 UTC+01:00
+.. date: 2023-07-13 10:41:52 UTC+01:00
 .. tags: gaming, linux, Steam, cheating, cs
 .. category: 
 .. link: 
@@ -11,9 +11,7 @@
 
 # 
 
-This post is WIP.
-
-## "*The purpose of a system is what it does*".
+# "*The purpose of a system is what it does*".
 
 With the release upcoming release of CS2, there is plenty of conversation around "VAC Live". Many people seem to think it'll be an improvement for CS2 over CSGO. Today I'll talk about why this probably is not the case.
 
@@ -29,23 +27,32 @@ These aren't difficult steps to follow, and this is intentional.
 
 Valve essentially allow cheating in CSGO. Their entire system is designed in this way. 
 
-### VAC
+## VAC
 
-VAC, compared to any other AC, is a minimal attempt at detecting cheats in the "traditional" manner. It's very passive compared to other AC solutions and it's also safer to run.
+VAC, compared to any other AC, is a minimal attempt at detecting cheats in the "traditional" manner. It's very passive compared to other AC solutions and it's also safer to run due to it being user-mode and not kernel-mode. 
+
+Personally, I like VAC as it isn't terribly invasive and can't crash my entire PC like Vanguard does.
 
 VAC could do a better job with some effort: Despite the source code for many cheats being publicly available, such as [Osiris](https://github.com/danielkrupinski/Osiris), they still don't detect it. On Linux, any user can download, compile and inject Osiris will zero consequences. Unless they use detected features such as "No duck cooldown".
 
 What they've tried so far isn't much: Here's a [post](https://lwss.github.io/State-Of-Vac-linux-2020/) by [LWSS](https://github.com/LWSS/) about VAC on Linux as of 2020, it has gone essentially unchanged.
 
-### Trust
+Some interesting methods they've tried:
 
-For the "[Trust](https://help.steampowered.com/en/faqs/view/00EF-D679-C76A-C185)" system: This system isn't intended to ban players. This system exists to keep cheaters separate from legitimate players.
+In attempt to detect modified view angles, they added backup variants of the associated variables. The idea here was to store the original view angles in the backup and compare them to the current ones. In the case that a cheat has modified the original view angles, the values will no longer match and the player should be banned. The main issue with this attempt is that in a cheat, you can also update the backup view angles associated variables, meaning this has been entirely circumvented. 
+
+On Linux, a VAC module exists which runs `cat /proc/$(pidof csgo_linux64)/maps | grep AimTux` in order to "detect" [AimTux](https://github.com/AimTuxOfficial/AimTux). Note that to bypass this, you simply just rename the library before injection. It's like "detecting" if a file is malware by using the file name.
+
+
+## Trust
+
+The "[Trust](https://help.steampowered.com/en/faqs/view/00EF-D679-C76A-C185)" system isn't intended to ban players. This system exists to keep cheaters separate from legitimate players.
 
 This implies that they would prefer let cheaters play with/against other cheaters.
 
 Of course this system isn't perfect either. At the time of writing, when using [gamesense](https://gamesense.pub/) (among other cheats), you can rage and still have high trust.
 
-### CS2
+## CS2
 
 What makes people think this will be any different for CS2?
 
