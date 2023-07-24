@@ -35,6 +35,8 @@ Personally, I like VAC as it isn't terribly invasive and can't crash my entire P
 
 VAC could do a better job with some effort: Despite the source code for many cheats being publicly available, such as [Osiris](https://github.com/danielkrupinski/Osiris), they still don't detect them. On Linux, any user can download, compile and inject Osiris will zero consequences. Unless they use detected features such as "No duck cooldown".
 
+![VAC Module](https://de.nuke.ie/temp/7305758579172023-07-24_11-34-10.png)
+
 What they've tried so far isn't much: Here's a [post](https://lwss.github.io/State-Of-Vac-linux-2020/) by [LWSS](https://github.com/LWSS/) about VAC on Linux as of 2020, it has gone essentially unchanged since.
 
 Some interesting methods they've tried:
@@ -57,6 +59,8 @@ Of course this system isn't perfect either. At the time of writing, when using [
 What makes people think this will be any different for CS2?
 
 "VAC Live" is supposedly a more active system utilising the trained "VAC Net" AI to detect cheaters. See [this video](https://www.youtube.com/watch?v=BfCSOjfPQWc).
+
+![The report dialog](https://de.nuke.ie/temp/1922173075572023-07-24_11-32-49.png)
 
 In the video, a player reports another and the target is instantly banned. Some important things to note about this are that the cheater was barely getting kills and also that during the report, the final checkbox was highlighted in red.
 

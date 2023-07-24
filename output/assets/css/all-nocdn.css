@@ -710,7 +710,6 @@ table.codetable, table.highlighttable { width: 100%;}
 
 body {
 	color: #4F5151;
-	font-family: monospace;
 	font-size: 16px;
 	line-height: 1.4;
 	padding: 1em;
@@ -719,15 +718,16 @@ body {
 .code, code, .hack code, .hack pre, .hack pre code {
 	background-color: #111111;
 	padding: 0.08em;
+	font-family: JetBrains Mono, monospace;
 }
 
 div .code {
 	border-radius: 0.5em;
 }
 
-.code, .hack, .hack blockquote, .hack code, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong
+.hack, .hack blockquote, .hack em, .hack h1, .hack h2, .hack h3, .hack h4, .hack h5, .hack h6, .hack strong
 {
-	font-family: monospace;
+	font-family: Roboto, sans-serif;
 }
 
 a:link, a:visited, a.email span.name {
