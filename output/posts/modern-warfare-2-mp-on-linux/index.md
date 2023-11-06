@@ -65,7 +65,7 @@ Now when the game is launched, we can use ProtonHax to run other applications al
 
 ### ProtonHax Usage
 
-First off, we need a tool to run along side the game. I will be using [mw2-fps-unlocker](https://github.com/andersblomqvist/mw2-fps-unlocker) which allows you to change the FPS limit and your FOV.
+First off, we need a tool to run along side the game. I will be using [mw2-fps-unlocker](https://github.com/Chopper1337/mw2-fps-unlocker) which allows you to change the FPS limit and your FOV.
 
 Run MW2 at least once if you haven't already. This will create the "compatdata" folder we need to place the executable in.
 
