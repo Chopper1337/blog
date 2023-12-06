@@ -15,11 +15,11 @@
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/archive.html</loc>
-  <lastmod>2023-07-11T22:15:00Z</lastmod>
+  <lastmod>2023-12-06T09:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/categories/</loc>
-  <lastmod>2023-07-13T10:34:00Z</lastmod>
+  <lastmod>2023-12-06T09:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/categories/cheating/</loc>
@@ -62,6 +62,10 @@
   <lastmod>2023-07-11T18:56:00Z</lastmod>
  </url>
  <url>
+  <loc>https://blog.chopperhook.xyz/categories/privacy/</loc>
+  <lastmod>2023-12-06T09:45:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://blog.chopperhook.xyz/categories/steam/</loc>
   <lastmod>2023-07-11T18:56:00Z</lastmod>
  </url>
@@ -74,16 +78,8 @@
   <lastmod>2023-07-11T18:01:00Z</lastmod>
  </url>
  <url>
-  <loc>https://blog.chopperhook.xyz/posts/cs-cheating/</loc>
-  <lastmod>2023-07-13T10:30:00Z</lastmod>
- </url>
- <url>
   <loc>https://blog.chopperhook.xyz/posts/cs2-vac-live/</loc>
   <lastmod>2023-07-24T10:42:00Z</lastmod>
- </url>
- <url>
-  <loc>https://blog.chopperhook.xyz/posts/csgo-cheating/</loc>
-  <lastmod>2023-07-11T22:15:00Z</lastmod>
  </url>
  <url>
   <loc>https://blog.chopperhook.xyz/posts/modern-warfare-2-mp-on-linux/</loc>
@@ -92,5 +88,9 @@
  <url>
   <loc>https://blog.chopperhook.xyz/posts/my-first-blog-post/</loc>
   <lastmod>2023-07-11T18:01:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://blog.chopperhook.xyz/posts/youtube/</loc>
+  <lastmod>2023-12-06T09:45:00Z</lastmod>
  </url>
 </urlset>

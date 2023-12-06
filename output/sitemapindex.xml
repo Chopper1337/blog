@@ -7,15 +7,15 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/cheating.xml</loc>
-  <lastmod>2023-07-24T10:42:00Z</lastmod>
+  <lastmod>2023-12-06T09:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/cod.xml</loc>
-  <lastmod>2023-07-11T18:56:00Z</lastmod>
+  <lastmod>2023-11-06T19:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/cs.xml</loc>
-  <lastmod>2023-07-24T10:42:00Z</lastmod>
+  <lastmod>2023-12-06T09:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/css.xml</loc>
@@ -23,7 +23,7 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/gaming.xml</loc>
-  <lastmod>2023-07-24T10:42:00Z</lastmod>
+  <lastmod>2023-12-06T09:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/git-hooks.xml</loc>
@@ -35,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/linux.xml</loc>
-  <lastmod>2023-07-24T10:42:00Z</lastmod>
+  <lastmod>2023-12-06T09:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/markdown.xml</loc>
@@ -43,11 +43,15 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/mw2.xml</loc>
-  <lastmod>2023-07-11T18:56:00Z</lastmod>
+  <lastmod>2023-11-06T19:39:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>https://blog.chopperhook.xyz/categories/privacy.xml</loc>
+  <lastmod>2023-12-06T09:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/categories/steam.xml</loc>
-  <lastmod>2023-07-24T10:42:00Z</lastmod>
+  <lastmod>2023-12-06T09:06:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/galleries/rss.xml</loc>
@@ -55,10 +59,10 @@
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/rss.xml</loc>
-  <lastmod>2023-07-24T10:42:00Z</lastmod>
+  <lastmod>2023-12-06T09:45:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://blog.chopperhook.xyz/sitemap.xml</loc>
-  <lastmod>2023-07-24T10:42:00Z</lastmod>
+  <lastmod>2023-12-06T09:45:00Z</lastmod>
  </sitemap>
 </sitemapindex>
