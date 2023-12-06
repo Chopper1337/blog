@@ -31,15 +31,20 @@ Install them and that's it. Just export your subscriptions from YouTube, import 
 
 ### Advantages
 
-* No advertisements
-* Downloading of videos within the clients
+* No advertisements (At any point)
+* Downloading of videos within the clients (audio and/or video)
 * Open source software you can modify to your liking
 * No cookies, fingerprinting, tracking etc.
 * No algorithm to recommend videos you don't care about
 * You can use any video player you like
 * More choice in playback devices (lightweight clients)
 
-FreeTube can also be used with Invidious, which means you can have zero communication with Google services directly.
+Those are some of the common advantages between FreeTube and NewPipe. The individual clients have some of their own:
+
+* FreeTube can be used with Invidious (which means you can have zero communication with Google services directly)
+* NewPipe can be used in the background (a "feature" you'd need to pay for in the official YouTube app.)
+* NewPipe can stream from Soundcloud, Bandcamp, FramaTube and media.ccc.de
+* FreeTube has profiles (you can create a profile for a particular group of channels for example)
 
 ### Disadvantages
 
@@ -52,7 +57,7 @@ On NewPipe specifically, if you have a large number of subscriptions, refreshing
 
 ## Other options
 
-These are only the apps *I* use for YouTube. There are plenty of other alternatives:
+These are only the apps *I* use for YouTube. There are plenty of other alternatives, particularly on Android:
 
 * [GrayJay](https://grayjay.app/)
 * [SkyTube](https://github.com/SkyTubeTeam/SkyTube)
@@ -62,4 +67,4 @@ and probably more...
 
 ## But this is stealing!!
 
-It's not. If you enjoy the videos somebody creates, donate to them or buy something they sell.
+It's not. If you enjoy the videos somebody creates, donate to them directly or buy something they sell.
