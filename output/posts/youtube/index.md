@@ -62,7 +62,7 @@ Similarly, on FreeTube, having a large number of subscriptions forces the applic
 
 ## Other options
 
-These are only the apps *I* use for YouTube. There are plenty of other alternatives, particularly on Android:
+FreeTube and NewPipe are only *my* preferred clients. There are plenty of other alternatives, particularly on Android:
 
 * [GrayJay](https://grayjay.app/)
 * [SkyTube](https://github.com/SkyTubeTeam/SkyTube)
